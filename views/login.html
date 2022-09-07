@@ -38,15 +38,15 @@
                 <div class="container container-login">
                 <div class="col col-login" >
                     <h2 class=" text-center py-1">Bienvenidos</h2>
-                    <form>
+                    <form action="/" method="get" id="form">
                         <div class="mb-3">
                             <label for="E-mail" class="form-label">E-mail</label>
                             <input type="email" class="form-control" id="E-mail" aria-describedby="emailHelp">
                             <div id="emailHelp" class="form-text">Nunca compartiremos su correo electrónico con nadie más.</div>
                         </div>
                         <div class="mb-4">
-                            <label for="contraseña" class="form-label">Contraseña</label>
-                            <input type="password" class="form-control" id="contraseña">
+                            <label for="contraseña"  class="form-label">Contraseña</label>
+                            <input type="password" minlength="5" pattern="[A-Za-z0-9_-]{1,15}" class="form-control" id="contraseña">
                         </div>
                         <div class="mb-4 form-check">
                             <input type="checkbox" class="form-check-input" id="check1">

@@ -55,15 +55,15 @@
         <section class=" section-crea-tu-cuenta">
             <article class="formulario-crear-cuenta borde-producto">
 
-                <form action="./ingresar" method="post" id="form">
+                <form action="/" method="get" id="form">
                     <div class="nombre-usuario">
                         <div class=>
                         
-                            <input type="text" name="nombre" id="nombre" required placeholder="Nombre">
+                            <input type="text" name="nombre" id="nombre" required minlength="3" placeholder="Nombre">
                         </div>
                         <div>
                             
-                            <input type="text" name="usuario" id="usuario" placeholder="Usuario" required>
+                            <input type="text" name="usuario" id="usuario" minlength="3" placeholder="Usuario" required>
                         </div>
                     </div>
                     
@@ -78,10 +78,10 @@
                     <div class="comprar-vender">
                         Perfil de usuario: 
                         <label for="tipotransaccion" class="comprar">Voy a comprar </label>
-                        <input type="radio" name="tipotransaccion" value="comprar">
+                        <input type="radio" pattern="[A-Za-z0-9_-]{1,15}" name="tipotransaccion" value="comprar">
                     
                         <label for="domicilio"  class="vender">Voy a vender </label>
-                        <input type="radio" name="tipotransaccion" value="vender">
+                        <input type="radio" pattern="[A-Za-z0-9_-]{1,15}" name="tipotransaccion" value="vender">
                     </div>
                     <div>
                         <label>Seleccione categorías de interés :</label> <br>
