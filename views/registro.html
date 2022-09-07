@@ -1,0 +1,126 @@
+<head>
+    <meta charset='utf-8'>
+    <meta http-equiv='X-UA-Compatible' content='IE=edge'>
+
+    <!--Viewport-->
+
+    <meta name="viewport" content="width = device-width">
+    <title>Mercado Liebre</title>
+    
+    <!--Bootstrap (icons)-->
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap@5.2.0/dist/css/bootstrap.min.css">
+    
+     <!--Normalize-->
+
+     <link rel="stylesheet" href="./css/normalize.css">
+
+    <!--My Styles-->
+    <link href="./css/style.css" rel="stylesheet">
+
+     <!--Font Roboto-->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="stylesheet" href="https://cdn.jsdelivr.net/npm/bootstrap-icons@1.9.1/font/bootstrap-icons.css" integrity="sha384-xeJqLiuOvjUBq3iGOjvSQSIlwrpqjSHXpduPd6rQpuiM3f5/ijby8pCsnbu5S81n" crossorigin="anonymous">
+    <link href="https://fonts.googleapis.com/css2?family=Raleway:wght@200&display=swap" rel="stylesheet">
+    <script src="https://kit.fontawesome.com/99336f54c5.js" crossorigin="anonymous"></script>
+    
+    <script src='main.js'></script>
+</head>
+<body>
+
+    <header>
+        <div class="conteiner">
+            <div class="logo-barra-de-busqueda-compra-en-cuotas">
+                <nav class="contenedor-logo"><img src="/img/logo-mercado-liebre.svg" alt="Logo Tipo"  class="logo"></nav>
+                <h3 class="t-compra-en-cuotas"> <em class="t-compra-en-cuotas"> Compra en cuotas y sin tarjeda de credito<i class="fas fa-hand-holding-usd"></i></em></h3>
+            </div>
+            <nav id="barra-de-busqueda"><form method="get"><p class="barra-busqueda-con-lupita"><input type="search" placeholder="Buscar productos, marcas." name="busquedamodelos" list="listamodelos" required="" class="barrita-de-busqueda"><i><button type="submit" required="" class="lupita"><i class="fa-solid fa-magnifying-glass"></i></button></i></p></form></nav>
+            <div class="icono-de-navegacion-login"><svg xmlns="http://www.w3.org/2000/svg" width="24" height="24" viewBox="0 0 24 24"><path d="M12 0c-6.627 0-12 5.373-12 12s5.373 12 12 12 12-5.373 12-12-5.373-12-12-12zm6 17h-12v-2h12v2zm0-4h-12v-2h12v2zm0-4h-12v-2h12v2z"/></svg></div>
+            <nav class="contenerdo-etiquetas"><ul class="conteiner-etiquetas-left">
+            <li><a class="a" href="Ofertas">Ofertas  </a></li>
+            <li><a class="a" href="#Tiendas oficiales"> Tiendas oficiales  </a></li>
+            <li><a class="a" href="#Vender">Vender</a></li>
+            <li><a class="a" href="#Ayuda">Ayuda</a></li></ul>
+            <ul class="conteiner-etiquetas-right">
+            <li><a class="a" href="#Crea tu cuenta">Crea tu cuenta  <i class="fa-solid fa-address-card"></i></a></li>
+            <li><a class="a" href="/">Home   <i class="fa-solid fa-arrow-right-to-bracket"></i></a></li>
+            <li><a class="a" href="#Mis compras">Mis compras   <i class="fas fa-shopping-basket"></i></a></li>
+            </ul></nav>
+        </div>
+    </header>
+
+
+
+    <main>
+        <section class=" section-crea-tu-cuenta">
+            <article class="formulario-crear-cuenta borde-producto">
+
+                <form action="./ingresar" method="post" id="form">
+                    <div class="nombre-usuario">
+                        <div class=>
+                        
+                            <input type="text" name="nombre" id="nombre" required placeholder="Nombre">
+                        </div>
+                        <div>
+                            
+                            <input type="text" name="usuario" id="usuario" placeholder="Usuario" required>
+                        </div>
+                    </div>
+                    
+                    <div>
+                        <label for="fecha">Fecha de nacimiento :</label>
+                        <input type="date" name="fechanacimiento" id="fecha">
+                    </div>
+                    <div>
+                        
+                        <input type="text" name="domicilio" id="domicilio" placeholder="Domicilio" required>
+                    </div>
+                    <div class="comprar-vender">
+                        Perfil de usuario: 
+                        <label for="tipotransaccion" class="comprar">Voy a comprar </label>
+                        <input type="radio" name="tipotransaccion" value="comprar">
+                    
+                        <label for="domicilio"  class="vender">Voy a vender </label>
+                        <input type="radio" name="tipotransaccion" value="vender">
+                    </div>
+                    <div>
+                        <label>Seleccione categorías de interés :</label> <br>
+                        <div class="seleccion-de-categorias">
+                            Electrónica <input type="checkbox" name="interes" value="Electro">
+                        
+                        Moda <input type="checkbox" name="interes" value="Moda">
+                        
+                        Hogar <input type="checkbox" name="interes" value="Hogar">
+                        
+                        Juguetería <input type="checkbox" name="interes" value="Jugueteria">
+                        
+                        Vida Santa <input type="checkbox" name="interes" value="Vida Sana">
+
+                        </div>
+                        
+                    </div>
+                    <div>
+                        <label for="foto">Seleccionar una imagen para el perfil :</label>
+                        <input type="file" name="foto" accept=".jpg" class="input-img-usuario">
+                    </div>
+                    <div>
+                        
+                        <input type="password" name="password" id="contraseña" placeholder="Contraseña :" required>
+                    </div>
+                    <div>
+                        
+                        <input type="password" name="password" id="contraseña" placeholder="Confirme contraseña :" required>
+                    </div>
+                    <div class="borrar-enviar">
+                        <button type="reset" class="detele-button">Borrar</button>
+                        <a class="a" href="/"><button type="submit" class="submit-button"> Enviar</button></a>
+                    </div>
+
+                </form>
+            </article>
+        </section>
+    </main>
+
+</body>  
+
+</html>

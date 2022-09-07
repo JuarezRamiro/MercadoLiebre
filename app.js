@@ -9,14 +9,25 @@ const app = express();
 
 //Asi hago que la carpeta sea publica.
 app.use(express.static(path.join(__dirname, "/public")))
+
+
 //Asi envio un archivo HTML.
 app.get("/", (req, res)=>{
     res.sendFile(path.join(__dirname, "./views/home.html"));
 })
 
+app.get("/login", (req, res)=>{
+    res.sendFile(path.join(__dirname, "./views/login.html"));
+})
 
-//ruta del servidor
-app.listen(3000,()=>console.log("Esto anda"))
+app.get("/registro", (req, res)=>{
+    res.sendFile(path.join(__dirname, "./views/registro.html"));
+})
+
+
+
+//Asi levanto un servidor
+app.listen(3030,()=>console.log("Esto anda"))
 
 
 //Asi envio un texto HTML.
