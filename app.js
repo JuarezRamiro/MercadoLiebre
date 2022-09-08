@@ -25,9 +25,11 @@ app.get("/registro", (req, res)=>{
 })
 
 
-
+app.listen(process.env.PORT || 3030, function() {
+    console.log("Servidor corriendo en el puerto 3030");
+});
 //Asi levanto un servidor
-app.listen(3030,()=>console.log("Esto anda"))
+//app.listen(3030,()=>console.log("Esto anda"))
 
 
 //Asi envio un texto HTML.
